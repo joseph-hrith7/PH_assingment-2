@@ -112,3 +112,41 @@ margin: 20px 0;
 }
 
 /* features starts here */
+/* showcase starts here */
+.showcase{
+  display: flex;
+  width: 100%;
+}
+.left-text{
+    width: 50%;
+    margin: 0 80px;
+}
+.left-text h1{
+    border-left: 13px solid #FF900E;
+    border-left-width: thick;
+    padding: 0px 17px;
+    margin: 20px 0;
+    }
+.left-text p{
+    font-size: 14px;
+    color: #727272;
+    margin-bottom: 50px;
+}
+.cat{
+    margin: 0 23px;
+}
+.cat h3{
+
+}
+.cat p{
+
+}
+
+.right-image{
+    width: 50%;
+}
+.right-image img{
+    width: 500px;
+    height: 700px;
+}
+/* showcase ends here */
