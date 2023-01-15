@@ -64,6 +64,8 @@ nav ul li a {
   width: 87%;
   margin: 0px 100px 30px;
 }
+/* <!-- features starts here --> */
+
 .features {
   display: flex;
   justify-content: space-between;
@@ -97,9 +99,14 @@ nav ul li a {
 .right p {
   margin: 10px 0px;
 }
+/* <!-- features starts here --> */
+
+/* <!-- showcase sec starts here --> */
+
 .showcase {
   display: flex;
   width: 100%;
+  margin-bottom: 100px;
 }
 .left-text {
   width: 50%;
@@ -136,20 +143,70 @@ nav ul li a {
   position: absolute;
 }
 .year-button {
-    color: white;
-    background: rgb(255, 144, 14);
-    border-radius: 8px;
-    border: none;
-    font-weight: 700;
-    font-size: 50px;
-    margin: 20px 0px;
-    position:relative;
-    width: 250px;
-    height: 160px;
-    left: -31px;
-    top: 572px;
-  }
-  .year-button p{
-        font-size: 25px;
-        font-weight: 500;
-  }
+  color: white;
+  background: rgb(255, 144, 14);
+  border-radius: 8px;
+  border: none;
+  font-weight: 700;
+  font-size: 50px;
+  margin: 20px 0px;
+  position: relative;
+  width: 250px;
+  height: 160px;
+  left: -31px;
+  top: 572px;
+}
+.year-button p {
+  font-size: 25px;
+  font-weight: 500;
+}
+/* <!-- showcase sec ends here -->  */
+/* facts starts here */
+.facts {
+  margin: -6px 120px;
+}
+.facts h1 {
+  margin: 15px 0;
+}
+.facts p {
+  width: 422px;
+
+  font-size: 12px;
+
+  line-height: 20px;
+
+  color: #787474;
+}
+.facts .fact-items {
+  display: flex;
+  margin: 100px 54px;
+}
+.facts .fact-dis {
+  border: 1px solid #ff900e;
+  border-radius: 8px;
+  margin: 2px 22px;
+  width: 200px;
+  text-align: center;
+  height: 180px;
+}
+.fact-items :hover {
+  transform: scale(1.2);
+  transition: width 2s, ease-in-out 1s;
+}
+.facts .fact-dis img {
+  width: 40px;
+  height: 40px;
+  margin: 20px 0;
+}
+.fact-dis p {
+  width: 200px;
+  font-weight: 600;
+  font-size: 30px;
+  color: #424242;
+}
+.fact-dis #fact-text {
+  font-weight: 500;
+  margin: 20px 0;
+  font-size: 18px;
+}
+/* facts ends here */
