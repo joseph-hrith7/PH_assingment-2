@@ -23,7 +23,7 @@ nav ul {
 }
 nav ul li {
   list-style: none;
-  margin-right: 30px;
+  margin-right: 93px;
 }
 nav ul li a {
   text-decoration: none;
@@ -61,25 +61,24 @@ nav ul li a {
   width: 87%;
   margin: 0px 100px 30px;
 }
-/* responsive for nav and banner  mobile device */
 @media screen and (max-width: 576px) {
   .container {
     background-color: rgb(127, 205, 184);
   }
   nav {
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
   nav .logo {
     margin-left: 80px;
   }
   nav .logo,
   .menu {
-    margin-right: 20px;
+    margin-right: 25px;
   }
   nav h3 {
     font-weight: 700;
     font-size: 20px;
-    margin-left: -60px;
+    margin-left: 27px;
   }
   nav ul {
     flex-direction: column;
@@ -107,8 +106,6 @@ nav ul li a {
     margin: -35px 70px;
   }
 }
-/* Responsive for nav and banner ends here */
-/* features section code stars here */
 .features {
   display: flex;
   justify-content: space-between;
@@ -141,8 +138,6 @@ nav ul li a {
 .right p {
   margin: 10px 0px;
 }
-/* features section code ends here */
-/* feature responsive starts here */
 @media screen and (max-width: 576px) {
   .features {
     flex-direction: column;
@@ -162,7 +157,6 @@ nav ul li a {
     text-align: center;
   }
 }
-/* features responsive ends here */
 .showcase {
   display: flex;
   width: 100%;
@@ -220,8 +214,6 @@ nav ul li a {
   font-size: 25px;
   font-weight: 500;
 }
-/* showcase ends here */
-/* showcase responsive starts here */
 @media screen and (max-width: 576px) {
   .showcase {
     flex-direction: column;
@@ -235,7 +227,7 @@ nav ul li a {
   }
   .left-text p {
     font-size: 10px;
-    margin: 0 10px;
+    margin: 0px 10px;
   }
   .cat {
     margin: 10px 32px 15px 25px;
@@ -256,18 +248,12 @@ nav ul li a {
   }
   .year-button {
     width: 105px;
-
     height: 60px;
-
     left: 202px;
-
     top: 248px;
-
     font-size: 15px;
   }
 }
-/* showcase responsive ends here */
-
 .facts {
   margin: -6px 120px;
 }
@@ -312,16 +298,13 @@ nav ul li a {
   margin: 20px 0px;
   font-size: 18px;
 }
-/* fact responsive starts here */
 @media screen and (max-width: 576px) {
   .facts {
     margin: 270px 162px 21px;
   }
   .facts p {
     font-size: 10px;
-
     width: 250px;
-
     line-height: 13px;
   }
   .facts .fact-items {
@@ -343,12 +326,9 @@ nav ul li a {
   }
   .fact-dis #fact-num {
     font-size: 18px;
-
-    margin: 0 0 0 -36px;
+    margin: 0px 0px 0px -36px;
   }
 }
-/* fact responsive starts here */
-/* trust code starts from here */
 .trust-title {
   width: 100%;
   padding: 40px 0px;
@@ -366,7 +346,7 @@ nav ul li a {
   margin-bottom: 40px;
 }
 .trust-1 p {
-  margin: 15px 0px;
+  margin: 15px 250px;
 }
 .trust-1 h3 {
   font-size: 25px;
@@ -375,26 +355,21 @@ nav ul li a {
   color: rgb(127, 205, 184);
   margin-right: 15px;
 }
-/* trust code ends from here */
-/* trust responsive starts here */
-@media screen and (max-width: 576px)
-{
+@media screen and (max-width: 576px) {
   .trust-title {
-    padding: 0px 0px;
+    padding: 0px;
   }
-.trust-title h1 {
+  .trust-title h1 {
     font-size: 18px;
     margin: 20px 0px;
+  }
+  .trust .trust-1 h3 {
+    font-size: 20px;
+  }
+  .trust .trust-1 p {
+    margin: 15px 150px;
+  }
 }
-.trust .trust-1 h3 {
-  font-size: 20px;
-}
-.trust .trust-1 p {
-  margin: 15px 150px;
-}
-}
-/* trust responsive ends here */
-/* Sponser starts here */
 .sponser {
   margin: 100px 0px;
   text-align: center;
@@ -418,6 +393,22 @@ nav ul li a {
   height: 50px;
   filter: grayscale(100%);
 }
+/*  Sponser responsive */
+@media screen and (max-width: 576px) {
+  .spon-dis {
+    font-size: 14px;
+    margin: 0px 137px;
+}
+.sponser-img {
+  margin: 50px 157px;
+  display: flex;
+  flex-direction: column;
+}
+.sponser-img img {
+  margin: 15px 75px;
+}
+/* footer code from here */
+}
 footer {
   background: rgb(255, 244, 231);
   border-radius: 8px;
@@ -428,4 +419,9 @@ footer p {
   color: rgb(112, 109, 109);
   text-align: center;
   padding: 30px;
+}
+@media screen and (max-width: 576px){
+footer {
+    margin: 56px 80px;
+}
 }
