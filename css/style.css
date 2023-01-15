@@ -14,10 +14,6 @@ nav {
   display: flex;
   justify-content: space-between;
 }
-nav .logo,
-.menu {
-  margin: 50px 55px 60px 100px;
-}
 nav h3 {
   font-weight: 700;
   font-size: 31px;
@@ -65,8 +61,55 @@ nav ul li a {
   width: 87%;
   margin: 0px 100px 30px;
 }
-/* <!-- features starts here --> */
-
+/* responsive for nav and banner  mobile device */
+@media screen and (max-width: 576px) {
+  .container {
+    background-color: rgb(127, 205, 184);
+  }
+  nav {
+    justify-content: space-around;
+  }
+  nav .logo {
+    margin-left: 80px;
+  }
+  nav .logo,
+  .menu {
+    margin-right: 80px;
+  }
+  nav h3 {
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 47px;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .banner-parent {
+    margin: 42px auto;
+  }
+  .banner-text {
+    text-align: center;
+  }
+  .banner-text h1 {
+    font-size: 20px;
+  }
+  .banner-text p {
+    font-size: 10px;
+    margin: 10px 0px;
+  }
+  .primary-button {
+    padding: 10px 20px;
+    margin: 10px 0px;
+  }
+  .banner-image img {
+    width: 65%;
+    margin: -35px 70px;
+  }
+  
+}
+/* Responsive for nav and banner ends here */
+/* features section code stars here */
 .features {
   display: flex;
   justify-content: space-between;
@@ -75,12 +118,11 @@ nav ul li a {
 .features .left {
   width: 50%;
 }
-.features .left .port-img {
-}
 .features .left .port-img img {
-  width: 250px;
-  height: 250px;
-  margin: 10px;
+  width: 200px;
+  height: 200px;
+  margin-left: 30px;
+  margin-top: 14px;
 }
 .right {
   width: 50%;
@@ -100,10 +142,28 @@ nav ul li a {
 .right p {
   margin: 10px 0px;
 }
-/* <!-- features starts here --> */
-
-/* <!-- showcase sec starts here --> */
-
+/* features section code ends here */
+/* feature responsive starts here */
+@media screen and (max-width: 576px) {
+  .features {
+    flex-direction: column;
+    margin: 50px 150px;
+  }
+  .features .left {
+  }
+  .features .right {
+    margin: 15px 0px 0px 65px;
+  }
+  .right h2{
+    font-size: 20px;
+    margin: 13px 0px;
+  }
+  .right p {
+    margin: 10px -40px;
+    text-align: center;
+}
+}
+/* features responsive ends here */
 .showcase {
   display: flex;
   width: 100%;
@@ -111,7 +171,7 @@ nav ul li a {
 }
 .left-text {
   width: 50%;
-  margin: 0px 50px 0 110px;
+  margin: 0px 50px 0px 110px;
 }
 .left-text h1 {
   border-left: thick solid rgb(255, 144, 14);
@@ -124,7 +184,7 @@ nav ul li a {
   margin-bottom: 10px;
 }
 .cat {
-  margin: 20px 20px;
+  margin: 20px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px 0px;
   padding: 10px;
 }
@@ -161,29 +221,74 @@ nav ul li a {
   font-size: 25px;
   font-weight: 500;
 }
-/* <!-- showcase sec ends here -->  */
-/* facts starts here */
+/* showcase ends here */
+/* showcase responsive starts here */
+@media screen and (max-width: 576px) {
+  .showcase {
+    flex-direction: column;
+  }
+  .left-text {
+    margin: 0px 50px 0px 155px;
+  }
+  .left-text h1 {
+    margin: 15px 0px;
+    font-size: 16px;
+}
+.left-text p {
+  font-size: 10px;
+  margin: 0 10px;
+}
+  .cat{
+    margin: 10px 32px 15px 25px;
+    padding: 10px;
+  }
+  .cat h3 {
+    font-size: 12px;
+    margin: 15px 12px;
+}
+.right-image{
+
+}
+.right-image img{
+      height: 300px;
+      width: 300px;
+      left: 140px;
+} 
+.right-image{
+
+}
+.year-button{
+  
+width: 105px;
+  
+height: 60px;
+  
+left: 202px;
+  
+top: 248px;
+  
+font-size: 15px;
+}
+}
+/* showcase responsive ends here */
 .facts {
   margin: -6px 120px;
 }
 .facts h1 {
-  margin: 15px 0;
+  margin: 15px 0px;
 }
 .facts p {
   width: 422px;
-
   font-size: 12px;
-
   line-height: 20px;
-
-  color: #787474;
+  color: rgb(120, 116, 116);
 }
 .facts .fact-items {
   display: flex;
   margin: 99px 81px;
 }
 .facts .fact-dis {
-  border: 1px solid #ff900e;
+  border: 1px solid rgb(255, 144, 14);
   border-radius: 8px;
   margin: 2px 22px;
   width: 200px;
@@ -192,120 +297,107 @@ nav ul li a {
 }
 .fact-items :hover {
   transform: scale(1.2);
-  transition: width 2s, ease-in-out 1s;
+  transition: width 2s ease 0s, all 1s ease-in-out 0s;
 }
 .facts .fact-dis img {
   width: 40px;
   height: 40px;
-  margin: 20px 0;
+  margin: 20px 0px;
 }
 .fact-dis p {
   width: 200px;
   font-weight: 600;
   font-size: 30px;
-  color: #424242;
+  color: rgb(66, 66, 66);
 }
 .fact-dis #fact-text {
   font-weight: 500;
-  margin: 20px 0;
+  margin: 20px 0px;
   font-size: 18px;
 }
-/* facts ends here */
-/* trust sec starts here */
-
-.trust-title{
-	width: 100%;
-	padding: 40px 0;
-	text-align: center;
-}
-.trust-title h1{
-	margin: 10px 0;
-}
-.trust-title p{
-	margin: 10px 0;
-    padding: 0 150px;
-}
-.trust-1{
-	text-align: center;
-	    margin-bottom: 40px;
-}
-.trust-1 p{
-	margin:  15px 0;
-}
-.trust-1 h3 {
-	font-size: 25px;
-}
-.trust-1 i{
-	color: #7FCDB8;
-    margin-right: 15px;
-}
-/* trust sec ends here */
-/* sponser starts here */
-.sponser {
-  margin: 100px 0;
+.trust-title {
+  width: 100%;
+  padding: 40px 0px;
   text-align: center;
 }
-.sponser h1{
-  margin: 20px 0;
+.trust-title h1 {
+  margin: 10px 0px;
+}
+.trust-title p {
+  margin: 10px 0px;
+  padding: 0px 150px;
+}
+.trust-1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.trust-1 p {
+  margin: 15px 0px;
+}
+.trust-1 h3 {
+  font-size: 25px;
+}
+.trust-1 i {
+  color: rgb(127, 205, 184);
+  margin-right: 15px;
+}
+.sponser {
+  margin: 100px 0px;
+  text-align: center;
+}
+.sponser h1 {
+  margin: 20px 0px;
 }
 .spon-dis {
   font-weight: 400;
   font-size: 16px;
   text-align: center;
-  color: #727272;
-  margin: 0 400px;
+  color: rgb(114, 114, 114);
+  margin: 0px 400px;
 }
-.sponser-img{
+.sponser-img {
   margin: 100px 30px;
 }
-.sponser-img img{
-  margin: 0 75px;
+.sponser-img img {
+  margin: 0px 75px;
   width: 100.51px;
   height: 50px;
   filter: grayscale(100%);
 }
-/* sponser ends here */
-/* footer starts here */
 footer {
-  background: #FFF4E7;
+  background: rgb(255, 244, 231);
   border-radius: 8px;
-  margin: 116px 116px;
+  margin: 116px;
 }
-footer p{
+footer p {
   font-size: 18px;
-  color: #706d6d;
+  color: rgb(112, 109, 109);
   text-align: center;
   padding: 30px;
 }
-/* footer ends here */
-
-
-
-
-
-.developer-title{
-	width: 100%;
-	padding: 40px 0;
-	text-align: center;
+.developer-title {
+  width: 100%;
+  padding: 40px 0px;
+  text-align: center;
 }
-.developer-title h1{
-	margin: 10px 0;
+.developer-title h1 {
+  margin: 10px 0px;
 }
-.developer-title p{
-	margin: 10px 0;
-    padding: 0 150px;
+.developer-title p {
+  margin: 10px 0px;
+  padding: 0px 150px;
 }
-.trust-1{
-	text-align: center;
-	    margin-bottom: 40px;
+.trust-1 {
+  text-align: center;
+  margin-bottom: 40px;
 }
-.trust-1 p{
-	margin: 15px 300px;
+.trust-1 p {
+  margin: 15px 300px;
 }
 .trust-1 h3 {
-	font-size: 25px;
+  font-size: 25px;
 }
-.trust-1 i{
-	color: #7FCDB8;
-    margin-right: 15px;
+.trust-1 i {
+  color: rgb(127, 205, 184);
+  margin-right: 15px;
 }
