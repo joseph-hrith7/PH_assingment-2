@@ -23,7 +23,7 @@ nav ul {
 }
 nav ul li {
   list-style: none;
-  margin-right: 93px;
+  margin-right: 25px;
 }
 nav ul li a {
   text-decoration: none;
@@ -32,7 +32,7 @@ nav ul li a {
 }
 .banner-parent {
   width: 50%;
-  margin: 42px auto;
+  margin: 100px auto;
 }
 .banner-text {
   text-align: center;
