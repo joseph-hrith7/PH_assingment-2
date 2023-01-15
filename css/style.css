@@ -67,19 +67,19 @@ nav ul li a {
     background-color: rgb(127, 205, 184);
   }
   nav {
-    justify-content: space-around;
+    justify-content: space-between;
   }
   nav .logo {
     margin-left: 80px;
   }
   nav .logo,
   .menu {
-    margin-right: 80px;
+    margin-right: 20px;
   }
   nav h3 {
     font-weight: 700;
     font-size: 20px;
-    margin-left: 47px;
+    margin-left: -60px;
   }
   nav ul {
     flex-direction: column;
@@ -106,7 +106,6 @@ nav ul li a {
     width: 65%;
     margin: -35px 70px;
   }
-  
 }
 /* Responsive for nav and banner ends here */
 /* features section code stars here */
@@ -154,14 +153,14 @@ nav ul li a {
   .features .right {
     margin: 15px 0px 0px 65px;
   }
-  .right h2{
+  .right h2 {
     font-size: 20px;
     margin: 13px 0px;
   }
   .right p {
     margin: 10px -40px;
     text-align: center;
-}
+  }
 }
 /* features responsive ends here */
 .showcase {
@@ -233,42 +232,39 @@ nav ul li a {
   .left-text h1 {
     margin: 15px 0px;
     font-size: 16px;
-}
-.left-text p {
-  font-size: 10px;
-  margin: 0 10px;
-}
-  .cat{
+  }
+  .left-text p {
+    font-size: 10px;
+    margin: 0 10px;
+  }
+  .cat {
     margin: 10px 32px 15px 25px;
     padding: 10px;
   }
   .cat h3 {
     font-size: 12px;
     margin: 15px 12px;
-}
-.right-image{
+  }
+  .right-image {
+  }
+  .right-image img {
+    height: 300px;
+    width: 300px;
+    left: 140px;
+  }
+  .right-image {
+  }
+  .year-button {
+    width: 105px;
 
-}
-.right-image img{
-      height: 300px;
-      width: 300px;
-      left: 140px;
-} 
-.right-image{
+    height: 60px;
 
-}
-.year-button{
-  
-width: 105px;
-  
-height: 60px;
-  
-left: 202px;
-  
-top: 248px;
-  
-font-size: 15px;
-}
+    left: 202px;
+
+    top: 248px;
+
+    font-size: 15px;
+  }
 }
 /* showcase responsive ends here */
 
@@ -319,44 +315,40 @@ font-size: 15px;
 /* fact responsive starts here */
 @media screen and (max-width: 576px) {
   .facts {
-    margin: 300px 162px;
-}
-.facts p {
-  
-font-size: 10px;
-  
-width: 250px;
-  
-line-height: 13px;
-}
-.facts .fact-items {
+    margin: 270px 162px 21px;
+  }
+  .facts p {
+    font-size: 10px;
+
+    width: 250px;
+
+    line-height: 13px;
+  }
+  .facts .fact-items {
     flex-direction: column;
     margin: 22px 0px;
-}
-.facts .fact-dis {
-  
-      width: 180px;
-      height: 140px;
-      margin: 12px 30px;
-      }
-.facts .fact-dis img {
-  width: 50px;
-  height: 50px;
-  margin: 10px 0px;
-}
-.fact-dis #fact-text{
+  }
+  .facts .fact-dis {
+    width: 180px;
+    height: 140px;
+    margin: 12px 30px;
+  }
+  .facts .fact-dis img {
+    width: 50px;
+    height: 50px;
+    margin: 10px 0px;
+  }
+  .fact-dis #fact-text {
+    margin-left: -35px;
+  }
+  .fact-dis #fact-num {
+    font-size: 18px;
 
-margin-left: -35px;
-}
-.fact-dis #fact-num{
-
-font-size: 18px;
-
-margin: 0 0 0 -36px;
-}
+    margin: 0 0 0 -36px;
+  }
 }
 /* fact responsive starts here */
-
+/* trust code starts from here */
 .trust-title {
   width: 100%;
   padding: 40px 0px;
@@ -383,6 +375,26 @@ margin: 0 0 0 -36px;
   color: rgb(127, 205, 184);
   margin-right: 15px;
 }
+/* trust code ends from here */
+/* trust responsive starts here */
+@media screen and (max-width: 576px)
+{
+  .trust-title {
+    padding: 0px 0px;
+  }
+.trust-title h1 {
+    font-size: 18px;
+    margin: 20px 0px;
+}
+.trust .trust-1 h3 {
+  font-size: 20px;
+}
+.trust .trust-1 p {
+  margin: 15px 150px;
+}
+}
+/* trust responsive ends here */
+/* Sponser starts here */
 .sponser {
   margin: 100px 0px;
   text-align: center;
@@ -416,30 +428,4 @@ footer p {
   color: rgb(112, 109, 109);
   text-align: center;
   padding: 30px;
-}
-.developer-title {
-  width: 100%;
-  padding: 40px 0px;
-  text-align: center;
-}
-.developer-title h1 {
-  margin: 10px 0px;
-}
-.developer-title p {
-  margin: 10px 0px;
-  padding: 0px 150px;
-}
-.trust-1 {
-  text-align: center;
-  margin-bottom: 40px;
-}
-.trust-1 p {
-  margin: 15px 300px;
-}
-.trust-1 h3 {
-  font-size: 25px;
-}
-.trust-1 i {
-  color: rgb(127, 205, 184);
-  margin-right: 15px;
 }
