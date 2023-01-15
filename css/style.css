@@ -8,6 +8,7 @@ body {
 }
 .container {
   background-color: rgba(255, 144, 14, 0.1);
+  padding: 38px;
 }
 nav {
   display: flex;
@@ -210,6 +211,35 @@ nav ul li a {
   font-size: 18px;
 }
 /* facts ends here */
+/* trust sec starts here */
+
+.trust-title{
+	width: 100%;
+	padding: 40px 0;
+	text-align: center;
+}
+.trust-title h1{
+	margin: 10px 0;
+}
+.trust-title p{
+	margin: 10px 0;
+    padding: 0 150px;
+}
+.trust-1{
+	text-align: center;
+	    margin-bottom: 40px;
+}
+.trust-1 p{
+	margin:  15px 0;
+}
+.trust-1 h3 {
+	font-size: 25px;
+}
+.trust-1 i{
+	color: #7FCDB8;
+    margin-right: 15px;
+}
+/* trust sec ends here */
 /* sponser starts here */
 .sponser {
   margin: 100px 0;
@@ -248,3 +278,34 @@ footer p{
   padding: 30px;
 }
 /* footer ends here */
+
+
+
+
+
+.developer-title{
+	width: 100%;
+	padding: 40px 0;
+	text-align: center;
+}
+.developer-title h1{
+	margin: 10px 0;
+}
+.developer-title p{
+	margin: 10px 0;
+    padding: 0 150px;
+}
+.trust-1{
+	text-align: center;
+	    margin-bottom: 40px;
+}
+.trust-1 p{
+	margin: 15px 300px;
+}
+.trust-1 h3 {
+	font-size: 25px;
+}
+.trust-1 i{
+	color: #7FCDB8;
+    margin-right: 15px;
+}
